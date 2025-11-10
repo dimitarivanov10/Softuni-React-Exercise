@@ -1,4 +1,4 @@
-export default function HomeParallax() {
+export default function WorkProcessSection() {
   return (
     <section className="mini" id="work-process">
       <div className="mini-content">
