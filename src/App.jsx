@@ -22,9 +22,18 @@ function App() {
 
       <FeaturesSmall />
 
-      <FeaturesBig />
-
-      <FeaturesBigItem />
+      <FeaturesBig
+        title="Let’s discuss about you project"
+        content="Nullam sit amet purus libero. Etiam ullamcorper nisl ut augue blandit, at finibus leo efficitur. Nam gravida purus non sapien auctor, ut aliquam magna ullamcorper."
+        imageUrl="assets/images/left-image.png"
+      />
+      <FeaturesBig
+        title="We can help you to grow your business"
+        content="Aenean pretium, ipsum et porttitor auctor, metus ipsum iaculis nisi, a bibendum lectus libero vitae urna. Sed id leo eu dolor luctus congue sed eget ipsum. Nunc nec luctus libero. Etiam quis dolor elit."
+        imageUrl="assets/images/right-image.png"
+        reverse
+      />
+      {/* <FeaturesBigItem /> */}
 
       <WorkProcessSection />
 

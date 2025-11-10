@@ -35,6 +35,7 @@ export default function PricingPlans() {
             space={120}
             transfer={1200}
             pro
+            support
             active
           />
           <PricingItem
