@@ -1,4 +1,14 @@
+import WorkProcessItem from "./WorkProcessItem";
+
 export default function WorkProcessSection() {
+  const workProcessItems = [
+    { title: "Get Ideas", content: "Godard pabst prism fam cliche." },
+    { title: "Sketch up", content: "Godard pabst prism fam cliche." },
+    { title: "Discuss", content: "Godard pabst prism fam cliche." },
+    { title: "Revise", content: "Godard pabst prism fam cliche." },
+    { title: "Approve", content: "Godard pabst prism fam cliche." },
+    { title: "Launch", content: "Godard pabst prism fam cliche." },
+  ];
   return (
     <section className="mini" id="work-process">
       <div className="mini-content">
@@ -16,60 +26,13 @@ export default function WorkProcessSection() {
           </div>
           {/* ***** Mini Box Start ***** */}
           <div className="row">
-            <div className="col-lg-2 col-md-3 col-sm-6 col-6">
-              <a href="#" className="mini-box">
-                <i>
-                  <img src="assets/images/work-process-item-01.png" alt="" />
-                </i>
-                <strong>Get Ideas</strong>
-                <span>Godard pabst prism fam cliche.</span>
-              </a>
-            </div>
-            <div className="col-lg-2 col-md-3 col-sm-6 col-6">
-              <a href="#" className="mini-box">
-                <i>
-                  <img src="assets/images/work-process-item-01.png" alt="" />
-                </i>
-                <strong>Sketch Up</strong>
-                <span>Godard pabst prism fam cliche.</span>
-              </a>
-            </div>
-            <div className="col-lg-2 col-md-3 col-sm-6 col-6">
-              <a href="#" className="mini-box">
-                <i>
-                  <img src="assets/images/work-process-item-01.png" alt="" />
-                </i>
-                <strong>Discuss</strong>
-                <span>Godard pabst prism fam cliche.</span>
-              </a>
-            </div>
-            <div className="col-lg-2 col-md-3 col-sm-6 col-6">
-              <a href="#" className="mini-box">
-                <i>
-                  <img src="assets/images/work-process-item-01.png" alt="" />
-                </i>
-                <strong>Revise</strong>
-                <span>Godard pabst prism fam cliche.</span>
-              </a>
-            </div>
-            <div className="col-lg-2 col-md-3 col-sm-6 col-6">
-              <a href="#" className="mini-box">
-                <i>
-                  <img src="assets/images/work-process-item-01.png" alt="" />
-                </i>
-                <strong>Approve</strong>
-                <span>Godard pabst prism fam cliche.</span>
-              </a>
-            </div>
-            <div className="col-lg-2 col-md-3 col-sm-6 col-6">
-              <a href="#" className="mini-box">
-                <i>
-                  <img src="assets/images/work-process-item-01.png" alt="" />
-                </i>
-                <strong>Launch</strong>
-                <span>Godard pabst prism fam cliche.</span>
-              </a>
-            </div>
+            {workProcessItems.map((item) => (
+              <WorkProcessItem
+                key={item.title}
+                title={item.title}
+                content={item.content}
+              />
+            ))}
           </div>
           {/* ***** Mini Box End ***** */}
         </div>

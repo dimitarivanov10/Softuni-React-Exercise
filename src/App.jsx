@@ -4,7 +4,7 @@ import Welcome from "./components/Welcome.jsx";
 import FeaturesSmall from "./components/FeaturesSmall.jsx";
 import FeaturesBig from "./components/FeaturesBig.jsx";
 import FeaturesBigItem from "./components/FeaturesBigItem.jsx";
-import HomeParallax from "./components/HomeParallax.jsx";
+import WorkProcessSection from "./components/WorkProcessSection.jsx";
 import TestimonialsStart from "./components/TestimonialsStart.jsx";
 import PricingPlans from "./components/PricingPlans.jsx";
 import CounterParallax from "./components/CounterParallax.jsx";
@@ -26,7 +26,7 @@ function App() {
 
       <FeaturesBigItem />
 
-      <HomeParallax />
+      <WorkProcessSection />
 
       <TestimonialsStart />
 
