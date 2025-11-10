@@ -1,4 +1,4 @@
-export default function FeaturesBig({ title, content, imageUrl, reverse }) {
+export default function Features({ title, content, imageUrl, reverse }) {
   return (
     <section className="section padding-top-70">
       <div className="container">
